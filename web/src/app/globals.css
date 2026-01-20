@@ -1,0 +1,79 @@
+:root {
+  --background: #ffffff;
+  --surface: #f4f5f8;
+  --border: #dde1eb;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --text: #1f2937;
+  --text-subtle: #5b6475;
+  --success: #047857;
+  --warning: #f59e0b;
+  --danger: #dc2626;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-open-sans), "Open Sans", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  max-width: 100vw;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+button:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.6);
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
